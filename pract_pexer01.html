@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            border-bottom: 1px solid black;
+            text-align: left;
+        }
+
+        td, th {
+            padding-left: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    How many TV's were sold?: <input type="text" id="tv_sold"> <br>
+    How many VRC's were sold?: <input type="text" id="vrc_sold"> <br>
+    How many Remote Controllers were sold?: <input type="text" id="rem_con_sold"> <br>
+    How many CD's were sold?: <input type="text" id="cd_sold"> <br>
+    How many Tape Recorder's were sold?: <input type="text" id="tp_rec_sold"> <br>
+
+    <input type="submit" id="btnSbmt">
+
+    <br>
+
+    <hr>
+
+    <table id="sales_table">
+        <tr>
+            <th>QTY</th>
+            <th>DESCRIPTION</th>
+            <th>UNIT PRICE</th>
+            <th>TOTAL PRICE</th>
+        </tr>
+        <tr id="tv_entry"></tr>
+        <tr id="vrc_entry"></tr>
+        <tr id="rem_con_entry"></tr>
+        <tr id="cd_entry"></tr>
+        <tr id="tp_rec_entry"></tr>
+        <tr><td collapse="4">&nbsp</td></tr>
+    </table>
+
+</body>
+</html>
+
+<script text="text/javascript" src="/lib/jquery-3.7.1.js"></script>
+<script text="text/javascript" src="/Lab Practice/pract_pexer01.js"></script>
