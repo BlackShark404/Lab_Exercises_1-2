@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Lot Charge System</title>
+    <style>
+        .form-group,
+        .result-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .form-group label,
+        .result-group label {
+            width: 180px;
+            display: inline-block;
+        }
+
+        .form-group input {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>PARKING LOT CHARGE SYSTEM</h1>
+
+    <div class="form-group">
+        <label for="vehicleType">Type of Vehicle:</label>
+        <select id="vehicleType">
+            <option value="" disabled selected>Select Vehicle</option>
+            <option value="Car">Car</option>
+            <option value="Truck">Truck</option>
+            <option value="Bus">Bus</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="entryHours">Entry Time (Hours):</label>
+        <input type="number" id="entryHours" min="0" max="23" placeholder="0-23">
+    </div>
+
+    <div class="form-group">
+        <label for="entryMinutes">Entry Time (Minutes):</label>
+        <input type="number" id="entryMinutes" min="0" max="59" placeholder="0-59">
+    </div>
+
+    <div class="form-group">
+        <label for="exitHours">Exit Time (Hours):</label>
+        <input type="number" id="exitHours" min="0" max="23" placeholder="0-23">
+    </div>
+
+    <div class="form-group">
+        <label for="exitMinutes">Exit Time (Minutes):</label>
+        <input type="number" id="exitMinutes" min="0" max="59" placeholder="0-59">
+    </div>
+
+    <input type="submit" id="calculateCharge" value="Calculate Charge">
+
+    <br><br>
+    <hr><br>
+
+    <div class="result-group">
+        <label>Type of Vehicle:</label>
+        <span id="typeOfVehicle">Car, Truck, or Bus</span>
+    </div>
+
+    <div class="result-group">
+        <label>TIME-IN:</label>
+        <span id="timeIn">XX:XX</span>
+    </div>
+
+    <div class="result-group">
+        <label>TIME-OUT:</label>
+        <span id="timeOut">XX:XX</span>
+    </div>
+
+    <br>
+
+    <div class="result-group">
+        <label>PARKING TIME:</label>
+        <span id="parkingTime">XX:XX</span>
+    </div>
+
+    <div class="result-group">
+        <label>ROUNDED TOTAL:</label>
+        <span id="roundedTotal">XX</span>
+    </div>
+
+    <br>
+
+    <div class="result-group">
+        <label><strong>TOTAL CHARGES:</label> ₱ <span id="totalCharges">X.XX</strong></span>
+    </div>
+
+    
+
+</body>
+
+</html>
+
+<script type="text/javascript" src="/lib/jquery-3.7.1.js"></script>
+<script type="text/javascript" src="/Lab/PEXER03.js"></script>
